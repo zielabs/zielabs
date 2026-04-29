@@ -21,7 +21,12 @@ export default function TestimonialCarousel({
   testimonials: Testimonial[];
 }) {
   const [isPaused, setIsPaused] = useState(false);
+  const isPausedRef = useRef(isPaused);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    isPausedRef.current = isPaused;
+  }, [isPaused]);
 
   // Jika jumlah testimoni sedikit, kita gandakan agar efek infinite marquee berjalan mulus
   const displayItems =
@@ -40,7 +45,7 @@ export default function TestimonialCarousel({
     const speed = 1.5;
 
     const scroll = () => {
-      if (!isPaused) {
+      if (!isPausedRef.current) {
         scrollPos += speed;
         // Reset scroll position ketika sudah mencapai sepertiga konten (karena ada 3 copy)
         if (scrollPos >= el.scrollWidth / 3) {
@@ -54,7 +59,7 @@ export default function TestimonialCarousel({
     animationFrameId = requestAnimationFrame(scroll);
 
     return () => cancelAnimationFrame(animationFrameId);
-  }, [isPaused, displayItems.length]);
+  }, [displayItems.length]);
 
   if (testimonials.length === 0) return null;
 
