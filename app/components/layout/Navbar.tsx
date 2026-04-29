@@ -24,9 +24,9 @@ interface NavLink {
 const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
-  { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
-  { label: "Testimonials", href: "/testimonials" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#about" },
+  { label: "Testimonials", href: "/#testimonials" },
 ];
 
 export default function Navbar() {

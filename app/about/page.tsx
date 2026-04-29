@@ -68,7 +68,9 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-6xl lg:text-7xl flex flex-col items-start gap-2">
           <TextReveal delay={0.1}>Merekayasa Masa Depan</TextReveal>
           <TextReveal delay={0.2}>
-            <span className="text-zinc-400 dark:text-zinc-600">Produk Digital</span>
+            <span className="bg-gradient-to-r from-[#50C878] to-[#2660A4] bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(80,200,120,0.3)]">
+              Produk Digital
+            </span>
           </TextReveal>
         </h1>
         <FadeUp delay={0.3}>
@@ -81,7 +83,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
           {/* Left: Story */}
           <FadeUp delay={0.1} className="lg:col-span-3 space-y-8">
-            <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest border-l-4 border-[#50C878] pl-4">
+            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#50C878] to-[#A7FFD3] uppercase tracking-widest border-l-4 border-[#50C878] pl-4">
               Visi Kami
             </h2>
             <div className="space-y-6 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
@@ -92,8 +94,7 @@ export default function AboutPage() {
                 dalam setiap solusi yang kami bangun.
               </p>
               <p>
-                Dari sistem inventarisasi enterprise seperti{" "}
-                <span className="font-bold text-zinc-800 dark:text-zinc-200">E-Borrow</span>{" "}
+                Dari sistem inventarisasi enterprise  
                 hingga platform e-commerce headless, POS systems, dan SaaS products — kami
                 menghadirkan solusi yang tidak hanya berfungsi, tetapi menginspirasi.
                 Setiap proyek dieksekusi dengan arsitektur yang scalable, codebase yang

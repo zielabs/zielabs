@@ -11,6 +11,7 @@ import "./globals.css";
 import { Providers } from "@/app/providers";
 import Navbar from "@/app/components/layout/Navbar";
 import Footer from "@/app/components/layout/Footer";
+import FloatingContactButton from "@/app/components/ui/FloatingContactButton";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -98,6 +99,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <div className="flex-1">{children}</div>
+          <FloatingContactButton />
           <Footer />
         </Providers>
       </body>

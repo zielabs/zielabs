@@ -1,4 +1,4 @@
-// middleware.ts
+// proxy.ts
 // Auth guard di level middleware — melindungi semua route /admin/*
 // kecuali /admin/login dan /admin/logout.
 
@@ -7,7 +7,7 @@ import { NextRequest, NextResponse } from "next/server";
 const SESSION_COOKIE = "zielabs_admin_session";
 const PUBLIC_ADMIN_PATHS = ["/admin/login", "/admin/logout"];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Hanya berlaku untuk /admin/* routes

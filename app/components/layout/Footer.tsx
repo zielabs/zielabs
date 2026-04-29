@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
             <p className="text-xs text-zinc-500 tracking-widest uppercase font-medium text-center md:text-left max-w-xs">
               Engineering Digital Excellence<br />
-              <span className="text-zinc-400 dark:text-zinc-600 mt-1 block">Jakarta, Indonesia</span>
+              <span className="text-zinc-400 dark:text-zinc-600 mt-1 block">Cianjur, Jawa Bart, Indonesia</span>
             </p>
           </div>
 
