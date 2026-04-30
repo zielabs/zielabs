@@ -478,7 +478,7 @@ export default async function Home() {
             <div className="mt-12">
               <MagneticButton>
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/628511145606"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-zinc-900 dark:bg-zinc-100 px-10 py-5 text-sm font-bold uppercase tracking-wider text-zinc-100 dark:text-zinc-950 transition-all duration-300 hover:bg-zinc-800 dark:hover:bg-white hover:shadow-[0_0_40px_rgba(0,0,0,0.2)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] overflow-hidden"

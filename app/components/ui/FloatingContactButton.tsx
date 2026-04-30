@@ -32,14 +32,14 @@ export default function FloatingContactButton() {
       id: "email",
       icon: <Mail className="size-4" />,
       label: "Email Kami",
-      href: "mailto:hello@zielabs.com",
+      href: "mailto:zielabsstudio@gmail.com",
       color: "hover:bg-[#50C878]/10 hover:text-[#50C878] hover:border-[#50C878]/30",
     },
     {
       id: "whatsapp",
       icon: <Phone className="size-4" />,
       label: "WhatsApp",
-      href: "https://wa.me/6281234567890",
+      href: "https://wa.me/628511145606",
       color: "hover:bg-green-500/10 hover:text-green-500 hover:border-green-500/30",
     },
   ];

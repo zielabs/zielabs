@@ -46,7 +46,7 @@ export default function Footer() {
           {/* ── Social Links ───────────────────────────────── */}
           <div className="flex items-center gap-6">
             <a
-              href="https://wa.me/628998143723"
+              href="https://wa.me/628511145606"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-bold uppercase tracking-wider text-zinc-500 hover:text-[#50C878] transition-colors link-underline pb-1"
@@ -60,7 +60,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="mailto:hello@zielabs.com"
+              href="mailto:zielabsstudio@gmail.com"
               className="text-sm font-bold uppercase tracking-wider text-zinc-500 hover:text-[#50C878] transition-colors link-underline pb-1"
             >
               Email
