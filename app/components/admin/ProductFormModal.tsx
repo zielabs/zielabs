@@ -243,7 +243,7 @@ export default function ProductFormModal({
                 <img
                   src={previewUrl}
                   alt="Preview"
-                  className="max-h-36 w-full rounded-xl object-cover"
+                  className="max-h-36 w-full rounded-xl object-cover object-top"
                 />
               ) : (
                 <div className="flex flex-col items-center gap-2 p-6 text-zinc-600">

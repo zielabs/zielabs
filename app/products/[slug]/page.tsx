@@ -106,14 +106,19 @@ export default async function ProductDetailPage({
         {/* ── Hero Image ────────────────────────────────────────── */}
         {product.imageUrl && (
           <FadeUp delay={0.25}>
-            <div className="relative mb-14 w-full overflow-hidden rounded-3xl border border-zinc-200 dark:border-white/5 shadow-md dark:shadow-none bg-zinc-100 dark:bg-zinc-900 aspect-video">
+            <div className="relative mb-14 w-full overflow-hidden rounded-2xl border border-zinc-200 dark:border-white/5 shadow-sm dark:shadow-none bg-zinc-100 dark:bg-zinc-900 aspect-video">
+              {/* Ambient glow overlay (matching ProductCard) */}
+              <div
+                className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_top,rgba(80,200,120,0.05),transparent_70%)] dark:bg-[radial-gradient(ellipse_at_top,rgba(80,200,120,0.08),transparent_70%)]"
+                aria-hidden="true"
+              />
               <Image
                 src={product.imageUrl}
                 alt={product.title}
                 fill
                 priority
                 sizes="(max-width: 1200px) 100vw, 1024px"
-                className="object-cover object-top"
+                className="object-cover object-top transition-all duration-700 ease-out"
               />
             </div>
           </FadeUp>

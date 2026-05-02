@@ -101,7 +101,7 @@ export default function AdminProductsClient({
                         <img
                           src={product.imageUrl}
                           alt={product.title}
-                          className="size-full object-cover"
+                          className="size-full object-cover object-top"
                         />
                       ) : (
                         <span className="text-zinc-600 text-xs">—</span>
